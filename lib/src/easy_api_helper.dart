@@ -6,8 +6,15 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
 
+/* The [EasyApiHelper] class allows connecting the flutter application with REST API 
+with ease. It provides inbuilt functions to perform HTTP methods like GET,POST,DELETE
+and PUT. This class handles the exceptions with the help of [EasyException] class.
+
+*/
 abstract class EasyApiHelper {
+  // The [baseApiUrl] is required parameter.
   final String baseApiUrl;
+  // The [headers] is optional parameter. By default it will take industry standard values.
   Map<String, String>? headers;
 
   EasyApiHelper({
@@ -20,6 +27,7 @@ abstract class EasyApiHelper {
               "Access-Control-Allow-Origin": "*"
             };
 
+  // Instantiating http client.
   Client client = http.Client();
 
   Future<dynamic> sendGetRequest(
