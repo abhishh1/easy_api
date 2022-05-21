@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
 
-abstract class ApiRequests {
+abstract class EasyApiHelper {
   final String baseApiUrl;
   Map<String, String>? headers;
 
-  ApiRequests({
+  EasyApiHelper({
     required this.baseApiUrl,
     headers,
   }) : headers = headers ??
