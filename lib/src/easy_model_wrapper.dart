@@ -1,4 +1,13 @@
 abstract class EasyModelWrapper {
+
+ /* Extend your repository class with `EasyModelWrapper` and see the easy magic🚀
+
+The `EasyModelWrapper` provides 3 functions which can be used to parse (encode/decode) data from data models.
+
+Note : At this version release, The data model must have prime paramter of `status` and `data` as the output. 
+ Else you will have to cast the property names.
+
+*/
   decoder({required dynamic response}) {
     final Map<String, dynamic>? parsedData = response;
     if (parsedData != null) {
