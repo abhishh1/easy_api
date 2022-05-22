@@ -1,6 +1,6 @@
 import 'package:easy_api/easy_api.dart';
-import 'package:easy_api_example/repository/todo.network.dart';
 import '../models/todo.model.dart';
+import './todo.network.dart';
 
 class TaskRepository extends EasyModelWrapper {
   final TaskNetwork taskNetwork;

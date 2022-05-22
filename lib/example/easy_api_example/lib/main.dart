@@ -1,4 +1,4 @@
-import 'package:easy_api_example/views/task.view.dart';
+import './views/task.view.dart';
 import 'package:flutter/material.dart';
 
 void main() {

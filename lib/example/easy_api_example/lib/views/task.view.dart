@@ -1,6 +1,6 @@
-import 'package:easy_api_example/models/todo.model.dart';
-import 'package:easy_api_example/repository/todo.network.dart';
-import 'package:easy_api_example/repository/todo.repository.dart';
+import '../models/todo.model.dart';
+import '../repository/todo.network.dart';
+import '../repository/todo.repository.dart';
 import 'package:flutter/material.dart';
 
 class TaskView extends StatelessWidget {
